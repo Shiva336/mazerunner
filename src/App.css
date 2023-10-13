@@ -1,7 +1,67 @@
 .App {
-  background-color: aqua;
+  background-color: rgb(15, 16, 16);
 }
 
 * {
-   background-color: aqua;
+   background-color: rgb(15, 16, 16);
+   color: aliceblue;
+   text-align: center;
+}
+
+.codeImage{
+  width: 70vw;
+  height: 70vh;
+}
+
+.imageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answerContainer{
+  background-color: rgb(54, 53, 53);
+  height: 4vh;
+  border: 2px solid white;
+  width: 30vw;
+}
+
+h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3vh;
+}
+
+#qrCode
+{
+  width: 30vw;
+  height: 50vh;
+}
+
+.submitButton {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f3efef;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.submitButton:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .submitButton {
+    padding: 0.25em 0.75em;
+  }
 }

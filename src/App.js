@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <h1>TASK 2</h1>
+      <hr/><br/>
      <div className="imageContainer">
       <img src='./task.jpg' className = "codeImage" alt='task'></img>
      </div>
@@ -23,14 +24,15 @@ function App() {
      <h3>Predict the output of the given code</h3>
      <input className='answerContainer' onChange={(e) => setAnswer(e.target.value)} />
      <button className='submitButton' onClick={handleClick}>Submit</button>
+     <br />
+     <br />
 
-     <br />
-     <br />
 
     {qrcode && (
       <>
+      <hr/>
         <h3>Scan the QR Code for the next clue.</h3>
-       <img src='qrcode.png' className = "codeImage" alt='qrcode'></img>
+       <img src='qrcode.png' className = "codeImage" id="qrCode" alt='qrcode'></img>
        </>
     )}
     </div>
